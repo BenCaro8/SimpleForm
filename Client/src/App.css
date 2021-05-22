@@ -1,0 +1,17 @@
+@layer components {
+  #submit-button {
+    @apply absolute right-8 bottom-8 text-black min-w-submit h-9 rounded-2xl font-semibold border-2 border-gray-700
+  }
+}
+
+.active-submit-button {
+  background-size: 200% 100%;
+    background-image: linear-gradient(to left,  #60a5fa 50%, #6366f1 50%);
+    -webkit-transition: background-position .5s;
+    -moz-transition: background-position .5s;
+    transition: background-position .5s;
+}
+
+.active-submit-button:hover {
+    background-position: -100% 0;
+}
